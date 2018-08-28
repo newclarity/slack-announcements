@@ -1,0 +1,7 @@
+{
+    "name": "newclarity/slack-announcements",
+    "homepage": "https://github.com/newclarity/slack-announcements",
+    "description": "WordPress plugin to optionally announce posts of supported types on selected Slack channels",
+    "type": "wordpress-plugin",
+    "license": "GPL-3.0"
+}
