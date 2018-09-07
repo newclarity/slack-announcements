@@ -3,7 +3,7 @@
 Plugin Name: Slack Announcements
 Plugin URI: https://github.com/newclarity/slack-announcements
 Description: Announce posts of selected types on Slack.
-Version: 0.1.0
+Version: 0.1.1
 Author: The NewClarity Team
 Author URI: http://newclarity.net
 Text Domain: slack-announcements
@@ -431,7 +431,7 @@ class Slack_Announcements {
 				break;
 			}
 
-			$postdata = WABE::http_POST();
+			$postdata = filter_input_array( INPUT_POST );
 
 			if ( ! isset( $postdata[ 'slack' ] ) || !isset( $postdata[ 'slack' ]['submit'] )) {
 				break;
